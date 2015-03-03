@@ -46,6 +46,10 @@ public class Compromisso {
         avisos.add(aviso);
     }
     
+    public void removeAviso(Aviso aviso){
+        avisos.remove(aviso);
+    }
+    
     @Override
     public String toString() {
         return dateFormat.format(data) + ": " + descricao;
